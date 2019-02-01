@@ -1,0 +1,13 @@
+<h2> 👦 Student Form 👧 </h2>
+
+<%= form_tag students_path do  %>
+
+<%= label(:student, :first_name) %>
+<%= text_field_tag :"student[first_name]", nil, id: 'first_name' %><br/>
+
+<%= label(:student, :last_name) %>
+<%= text_field_tag :"student[last_name]", nil, id: 'last_name' %><br/>
+
+<%= submit_tag "Submit Student" %>
+
+<% end %>
